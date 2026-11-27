@@ -1,0 +1,27 @@
+{
+  "name": "savorbite-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Express + Supabase backend for the SavorBite food storefront",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:seed": "node scripts/seed.mjs",
+    "db:setup": "node scripts/setup-db.mjs",
+    "db:restore-images": "node scripts/restore-images.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  }
+}
